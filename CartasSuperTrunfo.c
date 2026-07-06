@@ -104,24 +104,15 @@ int main()
 
   printf("\n\n");
 
-  // comparação das cartas
-
-  populacao = populacao1 > populacao2;
-  area = area1 > area2;
-  pontosturisticos = pontosturisticos1 > pontosturisticos2;
-  densidade = densidade1 > densidade2;
-  pib = Pib1 > Pib2;
-  superpoder = densidade1 < densidade2;
-
-  // impressão resultado das cartas
+  // impressão resultado da compação das cartas
 
   printf("Comparação da Cartas:\n");
-  printf("População:(%d)\n", populacao);
-  printf("Área:(%d)\n", area);
-  printf("Pontos turísticos:(%d)\n", pontosturisticos);
-  printf("Densidade Populacional:(%d)\n", densidade);
-  printf("PIB:(%d)\n", pib);
-  printf("Super Poder:(%d)\n", superpoder);
+  printf("População: %s\n", (populacao1 > populacao2) ? "Carta 1 venceu (1)" : "Carta 2 venceu (0)");
+  printf("Área: %s\n", (area1 > area2) ? "Carta 1 venceu (1)" : "Carta 2 venceu (0)");
+  printf("Pontos turísticos: %s\n", (pontosturisticos1 > pontosturisticos2) ? "Carta 1 venceu (1)" : "Carta 2 venceu (0)");
+  printf("Densidade Populacional: %s\n", (densidade1 < densidade2) ? "Carta 1 venceu (1)" : "Carta 2 venceu (0)");
+  printf("PIB: %s\n", (Pib1 > Pib2) ? "Carta 1 venceu (1)" : "Carta 2 venceu (0)");
+  printf("Super Poder: %s\n", (densidade1 < densidade2) ? "Carta 1 venceu (1)" : "Carta 2 venceu (0)");
 
   return 0;
 }
