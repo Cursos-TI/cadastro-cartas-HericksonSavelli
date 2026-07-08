@@ -107,12 +107,54 @@ int main()
   // impressão resultado da compação das cartas
 
   printf("Comparação da Cartas:\n");
-  printf("População: %s\n", (populacao1 > populacao2) ? "Carta 1 venceu (1)" : "Carta 2 venceu (0)");
-  printf("Área: %s\n", (area1 > area2) ? "Carta 1 venceu (1)" : "Carta 2 venceu (0)");
-  printf("Pontos turísticos: %s\n", (pontosturisticos1 > pontosturisticos2) ? "Carta 1 venceu (1)" : "Carta 2 venceu (0)");
-  printf("Densidade Populacional: %s\n", (densidade1 < densidade2) ? "Carta 1 venceu (1)" : "Carta 2 venceu (0)");
-  printf("PIB: %s\n", (Pib1 > Pib2) ? "Carta 1 venceu (1)" : "Carta 2 venceu (0)");
-  printf("Super Poder: %s\n", (densidade1 < densidade2) ? "Carta 1 venceu (1)" : "Carta 2 venceu (0)");
+  if (populacao1 > populacao2)
+  {
+    printf("População: Carta 1 venceu (1) - Valor:%lu Mil Habitantes\n", populacao1);
+  }
+  else
+  {
+    printf("População: Carta 2 venceu (0) - Valor:%lu Mil Habitantes\n", populacao2);
+  }
+  if (area1 > area2)
+  {
+    printf("Área: Carta 1 venceu (1) - Valor:%.2f Km²\n", populacao1);
+  }
+  else
+  {
+    printf("Área: Carta 1 venceu (0) - Valor:%.2f Km²\n", populacao2);
+  }
+  if (pontosturisticos1 > pontosturisticos2)
+  {
+    printf("Pontos turísticos: Carta 1 venceu (1) - Valor:%d\n", pontosturisticos1);
+  }
+  else
+  {
+    printf("Pontos turísticos: Carta 2 venceu (0) - Valor:%d\n", pontosturisticos2);
+  }
+  if (densidade1 < densidade2)
+  {
+    printf("Densidade Populacional: Carta 1 venceu (1) - Valor:%.2f hab/km²\n", densidade1);
+  }
+  else
+  {
+    printf("Densidade Populacional: Carta 2 venceu (0) - Valor:%.2f hab/km²\n", densidade2);
+  }
+  if ((Pib1 > Pib2))
+  {
+    printf("PIB: Carta 1 venceu (1) - Valor:%.2f reais\n", Pib1);
+  }
+  else
+  {
+    printf("PIB: Carta 2 venceu (0) - Valor:%.2f reais\n", Pib2);
+  }
+  if (densidade1 < densidade2)
+  {
+    printf("Super Poder: Carta 1 venceu (1) - Valor:%.2f \n", densidade1);
+  }
+  else
+  {
+    printf("Super Poder: Carta 2 venceu (0) - Valor:%.2f \n", densidade2);
+  }
 
   return 0;
 }
